@@ -4,7 +4,7 @@
       <link rel="stylesheet" type="text/css" href="styles.css" />
       <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100' rel='stylesheet' type='text/css'>
   </head>
-  <div id = "leftpic">
+  <div id = "headerpic">
     <h1> Liv Erickson </h1>
     <button id = "home"> </button>
   </div>
@@ -83,6 +83,7 @@
       $('#right').hide();
       $('#dev_container').hide();
       $('#design_container').show();
+      $('#home').show();
     });
 
     $("#dev").click(function()
@@ -90,12 +91,14 @@
       $('#right').hide();
       $('#design_container').hide();
       $('#dev_container').show();
+      $('#home').show();
     });
     $("#home").click(function()
     {
       $('#design_container').hide();
       $('#dev_container').hide();
       $('#right').show();
+      $('#home').hide();
     });
   });
   </script>
