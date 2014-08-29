@@ -1,23 +1,111 @@
-<!DOCTYPE html>
-<HTML>
-	<head>
-		<link rel="stylesheet" type="text/css" href="template.css" />
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div>
-			<div id = "overlay">
-				<h1> Livi Erickson </h1>
-			</div>
-			<img id="pic" src="815TwitterBackground.png">
-		</div>
-		<div id = "whitePanel">
-			<img src="White.png">
-		</div>
-		<div>
-			<img id = "bridge" src="Bridge.png">
-		</div>
-	</body>
-	<footer>
-	</footer>
-<HTML>
+<!DOCTYPE HTML5>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100' rel='stylesheet' type='text/css'>
+  </head>
+  <div id = "leftpic">
+    <h1> Liv Erickson </h1>
+    <button id = "home"> </button>
+  </div>
+  <!--The home page div. This is the default -->
+  <div id = "right">
+    <p>
+      "The only way to engineer the future tomorrow is to have lived in it yesterday" - Bill Buxton
+    </p>
+    <div>
+    <a id = "dev"> Code </a>
+    </div>
+    <img src = "picture.png" id = "rose">
+    <a href="#" id = "design"> Design </a>
+    <br>
+    <div id = "links">
+      <a href="http://bit.ly/shesgotablog" target = "blank" class = "link"> Blog </a>
+      <a href="mailto:livi.erickson@outlook.com" class = "link"> Contact </a>
+      <a href="http://bit.ly/140characters_or_fewer" target = "blank" class = "link"> @misslivirose </a>
+      <a href="http://bit.ly/livi_on_linked_in" target="blank" class = "link"> LinkedIn </a>
+      <a href="http://bit.ly/can_haz_github" target="blank" class = "last"> GitHub </a>
+    </div>
+  </div>
+  <!-- The design div. -->
+  <div id = "design_container">
+    <h1> Design </h1>
+    <p class = "designtext"> Software should be functional, beautiful, and usable. In today's technology-centric world, it is
+      increasingly important that applications and services are designed to supplement the user's
+      real-world experiences and supply them with a worry-free way to use the products they love. </p>
+      <div id = "icons">
+        <br>
+        <h2 class = "sectionheaders"> Icons </h2>
+        <img class = "iconclip" src = "Love Bug.png">
+        <img class = "iconclip" src = "CandyIcon.png">
+        <img class = "iconclip" src = "Lipstick.png">
+        <p class = "designtext"> Your application's icon is the front door to your product - it is the essence of your service packaged
+          neatly into a beautiful representation of your brand and hints at the experiences your users will quickly learn to love and trust.
+          Bright colors, clean lines, and subtle shadows evoke a sense of fun and simplicity. </p>
+        <br>
+      </div>
+      <div>
+          <h2 class = "sectionheaders"> Apps </h2>
+          <p class = "designtext"> Applications should be intuitive and instinctive. It is vital that each app is respectful of
+          the platform it runs on, presenting the user with an experience that is both delightful and uniquely familiar. </p>
+
+          <p class = "designtext"> In summer of 2013, I joined Microsoft as a user experience program manager on the Remote Desktop team in
+          Mountain View, California, where I worked closely with visual designers and researchers to identify usability issues
+          and utilized agile development techniques to decrease the amount of time needed to prototype UI designs. I led the first
+          round of user interface sketching for the Remote Desktop appliation on Windows Phone, and have since worked closely with
+          other team members to continue iterating on interaction and visual design updates.</p>
+      </div>
+  </div>
+
+  <!--  The code div -->
+  <div id = "dev_container">
+    <h1> Development </h1>
+    <p class = "designtext"> I graduated with my Bachelors of Science in Computer Science in May, 2013 from Virginia Tech with a focus in software
+      design and requirements engineering. While at Tech (go Hokies!) I studied programming fundamentals in computer organization, systems-level
+      development, object-oriented programming, language structuring, and specification standards. </p>
+    <p class = "designtext"> In addition to my structured coursework, I developed curricula for Windows 8 Modern development for Microsoft Surface
+      in conjunction with the Virginia Tech Mobile Software Engineering Lab as an undergraduate research project, during which I built 8 applications
+      and wrote their associated tutorials for various Windows 8 apps. In addition to technical research, I also had a chance to work in a
+      cross-disciplinary communications course that aimed to analyze the effects of virtual environments on society by preparing and submitting
+      a research proposal to the Virginia Tech IRB.
+  </div>
+  <!-- Home Button -->
+  <!-- JQuery for handling switches -->
+  <script src = "jquery.js"></script>
+  <script>
+  $(document).ready(function()
+  {
+    $('#design_container').hide();
+    $('#dev_container').hide();
+
+    $("#design").click(function()
+    {
+      $('#right').hide();
+      $('#dev_container').hide();
+      $('#design_container').show();
+    });
+
+    $("#dev").click(function()
+    {
+      $('#right').hide();
+      $('#design_container').hide();
+      $('#dev_container').show();
+    });
+    $("#home").click(function()
+    {
+      $('#design_container').hide();
+      $('#dev_container').hide();
+      $('#right').show();
+    });
+  });
+  </script>
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-54110591-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

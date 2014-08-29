@@ -1,0 +1,156 @@
+/* Images */
+#pic
+{
+  height:100%;
+  position:fixed;
+  left:0%;
+
+}
+#rose
+{
+  width:34%;
+
+}
+.iconclip
+{
+  width: 20%;
+  margin: 10px;
+}
+/* Div */
+body
+{
+  background-color:#fffeff;
+  font-family:Raleway;
+  text-align:center;
+  margin:0px;
+}
+#leftpic
+{
+  height:100%;
+  width:34%;
+  position:fixed;
+  left:0%;
+  background-image:url("BayBridge.png");
+  background-size:cover;
+
+}
+#right
+{
+  width:65%;
+  height:100%;
+  float:right;
+}
+#links
+{
+  width:100%;
+  margin-top:35px;
+  float:bottom;
+}
+
+#design_container
+{
+  width:65%;
+  height:100%;
+  float:right;
+}
+
+#dev_container
+{
+  width:65%;
+  height:100%;
+  float:right;
+}
+#icons
+{
+  width:98%;
+  background-color: rgba(220 , 220, 220, .3);
+  box-shadow: 0px 2px 5px #111534;
+}
+
+/* Links */
+#dev
+{
+  float:left;
+  margin-left:10%;
+  margin-top:10%;
+
+  font-size:30px;
+  font-weight:100;
+}
+#design
+{
+  float:right;
+  margin-right:10%;
+  margin-top:10%;
+
+  font-size:30px;
+  font-weight:100;
+}
+a
+{
+  font-weight: 200;
+  margin-left:20px;
+  margin-right:20px;
+  font-size:20px;
+  text-decoration: none;
+  color:#000675;
+}
+a:hover
+{
+  color:#FFFFFF;
+  text-shadow: #000675 0px 0px 13px;
+}
+/* Text */
+h1
+{
+  font-size:50px;
+  font-weight: 200;
+  top:30%;
+  margin-bottom:15px;
+}
+h2
+{
+  font-size:30px;
+  font-weight:100;
+}
+h2.sectionheaders
+{
+  text-decoration:underline;
+}
+h3
+{
+  font-size:20px;
+  font-weight:100;
+}
+
+p
+{
+  font-size:30px;
+  font-weight:100;
+  padding-left:30px;
+  padding-right:30px;
+  margin-top:13%;
+}
+.designtext
+{
+  text-align:justify;
+  font-size: 21px;
+  font-weight:200;
+  margin-top:5%;
+}
+/* Buttons */
+#home
+{
+  width:55px;
+  height:55px;
+  background: url("homebutton.ico") no-repeat top left;
+  background-color:transparent;
+  background-size:55px;
+  border: none;
+  outline:none;
+}
+#home:hover
+{
+  background: url("homepressed.png") no-repeat top left;
+  background-size:57px;
+}
