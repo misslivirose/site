@@ -6,19 +6,17 @@
   </head>
   <div>
   <div id = "headerpic">
+    <img src = "SquarePic.png" id = "rose">
     <h1 id = "homelabel"> Liv Erickson </h1>
-    <img src = "picture.png" id = "rose">
+    <a id = "design"> Designer </a>
+    <a id = "dev"> Developer </a>
   </div>
   <!--The home page div. This is the default -->
   <div id = "right">
-    <br><br><br><br>
     <p>
       "The only way to engineer the future tomorrow is to have lived in it yesterday" - Bill Buxton
     </p>
-    <br>
-    <a id = "dev"> Code </a>
-    <a id = "design"> Design </a>
-    <br><br>
+    <br><br><br>
     <div id = "links">
       <a href="http://bit.ly/shesgotablog" target = "blank" class = "link"> Blog </a>
       <a href="mailto:livi.erickson@outlook.com" class = "link"> Contact </a>
@@ -33,14 +31,19 @@
       increasingly important that applications and services are designed to supplement the user's
       real-world experiences and supply them with a worry-free way to use the products they love. </p>
       <div id = "icons">
-        <br>
         <h2 class = "sectionheaders"> Icons </h2>
-        <img class = "iconclip" src = "Love Bug.png">
-        <img class = "iconclip" src = "CandyIcon.png">
-        <img class = "iconclip" src = "Lipstick.png">
         <p class = "designtext"> Your application's icon is the front door to your product - it is the essence of your service packaged
           neatly into a beautiful representation of your brand and hints at the experiences your users will quickly learn to love and trust.
           Bright colors, clean lines, and subtle shadows evoke a sense of fun and simplicity. </p>
+        <br>
+        <img class = "iconclip" src = "Love Bug.png">
+        <img class = "iconclip" src = "CandyIcon.png">
+        <img class = "iconclip" src = "Lipstick.png">
+        <br>
+        <p class = "designtext"> Designing for the vast varieties of today's devices can be a challenge. Successful products recognize the experiences
+        and ecosystems their customers use and create fluid experiences tailored to their user's needs. I begin with scalable vector formats for my
+        icons and graphics using <a class = 'inline' href="https://affinity.serif.com/"> Affinity Designer </a> or
+        <a class = 'inline' href = "http://inkscape.org/"> Inkscape</a>, and finalize images and assets using open source image manipulation programs.</p>
         <br>
       </div>
       <div>
@@ -48,11 +51,11 @@
           <p class = "designtext"> Applications should be intuitive and instinctive. It is vital that each app is respectful of
           the platform it runs on, presenting the user with an experience that is both delightful and uniquely familiar. </p>
 
-          <p class = "designtext"> In summer of 2013, I joined Microsoft as a user experience program manager on the Remote Desktop team in
-          Mountain View, California, where I worked closely with visual designers and researchers to identify usability issues
-          and utilized agile development techniques to decrease the amount of time needed to prototype UI designs. I led the first
-          round of user interface sketching for the Remote Desktop appliation on Windows Phone, and have since worked closely with
-          other team members to continue iterating on interaction and visual design updates.</p>
+          <p class = "designtext"> With an educational background in computer science, work experience as a Program and Product
+            Manager, and practice in iconography and visual graphics, I am uniquely positioned as a design architect with the ability
+            to wear many hats. Usability, accessibility, visual design, and branding should be deeply integrated into every aspect of
+            an application or service, beginning with the conceptual product designs all the way up to launch and as part of the
+            evolution of your idea. </p>
       </div>
   </div>
 
@@ -62,8 +65,10 @@
     <p class = "designtext"> I graduated with my Bachelors of Science in Computer Science in May, 2013 from Virginia Tech with a focus in software
       design and requirements engineering. While at Tech (go Hokies!) I studied programming fundamentals in computer organization, systems-level
       development, object-oriented programming, language structuring, and specification standards. </p>
+
+    <h2 class = "sectionheaders"> Research </h2>
     <p class = "designtext"> In addition to my structured coursework, I developed curricula for Windows 8 Modern development for Microsoft Surface
-      in conjunction with the Virginia Tech Mobile Software Engineering Lab as an undergraduate research project, during which I built 8 applications
+      in conjunction with the Virginia Tech Mobile Software Engineering Lab as an undergraduate research project, during which I built applications
       and wrote their associated tutorials for various Windows 8 apps. In addition to technical research, I also had a chance to work in a
       cross-disciplinary communications course that aimed to analyze the effects of virtual environments on society by preparing and submitting
       a research proposal to the Virginia Tech IRB.
@@ -92,12 +97,12 @@
       $('#dev_container').show();
       $('#rose').attr("src", "devimg.png");
     });
-    $("#homelabel").click(function()
+    $("#rose").click(function()
     {
       $('#design_container').hide();
       $('#dev_container').hide();
       $('#right').show();
-      $('#rose').attr("src", "picture.png");
+      $('#rose').attr("src", "SquarePic.png");
     });
   });
   </script>
