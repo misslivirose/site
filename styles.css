@@ -96,6 +96,7 @@ a:hover
 {
   color:#FFFFFF;
   text-shadow: #000675 0px 0px 13px;
+  cursor:pointer;
 }
 /* Text */
 h1
@@ -104,6 +105,10 @@ h1
   font-weight: 200;
   top:30%;
   margin-bottom:15px;
+}
+#homelabel:hover
+{
+  cursor:pointer;
 }
 h2
 {

@@ -5,7 +5,7 @@
       <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100' rel='stylesheet' type='text/css'>
   </head>
   <div id = "headerpic">
-    <h1> Liv Erickson </h1>
+    <h1 id = "homelabel"> Liv Erickson </h1>
     <button id = "home"> </button>
   </div>
   <!--The home page div. This is the default -->
@@ -93,7 +93,7 @@
       $('#dev_container').show();
       $('#home').show();
     });
-    $("#home").click(function()
+    $("#homelabel").click(function()
     {
       $('#design_container').hide();
       $('#dev_container').hide();
