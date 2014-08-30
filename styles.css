@@ -141,19 +141,3 @@ p
   margin-top:5%;
 }
 /* Buttons */
-#home
-{
-  width:55px;
-  height:55px;
-  background: url("homebutton.ico") no-repeat top left;
-  background-color:transparent;
-  background-size:55px;
-  border: none;
-  outline:none;
-  visibility:hidden;
-}
-#home:hover
-{
-  background: url("homepressed.png") no-repeat top left;
-  background-size:57px;
-}

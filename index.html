@@ -6,7 +6,6 @@
   </head>
   <div id = "headerpic">
     <h1 id = "homelabel"> Liv Erickson </h1>
-    <button id = "home"> </button>
   </div>
   <!--The home page div. This is the default -->
   <div id = "right">
@@ -83,7 +82,6 @@
       $('#right').hide();
       $('#dev_container').hide();
       $('#design_container').show();
-      $('#home').show();
     });
 
     $("#dev").click(function()
@@ -91,14 +89,12 @@
       $('#right').hide();
       $('#design_container').hide();
       $('#dev_container').show();
-      $('#home').show();
     });
     $("#homelabel").click(function()
     {
       $('#design_container').hide();
       $('#dev_container').hide();
       $('#right').show();
-      $('#home').hide();
     });
   });
   </script>
