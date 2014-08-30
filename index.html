@@ -7,10 +7,10 @@
   <div>
   <div id = "headerpic">
     <h1 id = "homelabel"> Liv Erickson </h1>
+    <img src = "picture.png" id = "rose">
   </div>
   <!--The home page div. This is the default -->
   <div id = "right">
-    <img src = "picture.png" id = "rose">
     <p>
       "The only way to engineer the future tomorrow is to have lived in it yesterday" - Bill Buxton
     </p>
@@ -58,7 +58,7 @@
 
   <!--  The code div -->
   <div id = "dev_container">
-    <h1> Development </h1>
+    <br><br>
     <p class = "designtext"> I graduated with my Bachelors of Science in Computer Science in May, 2013 from Virginia Tech with a focus in software
       design and requirements engineering. While at Tech (go Hokies!) I studied programming fundamentals in computer organization, systems-level
       development, object-oriented programming, language structuring, and specification standards. </p>
@@ -90,12 +90,14 @@
       $('#right').hide();
       $('#design_container').hide();
       $('#dev_container').show();
+      $('#rose').attr("src", "devimg.png");
     });
     $("#homelabel").click(function()
     {
       $('#design_container').hide();
       $('#dev_container').hide();
       $('#right').show();
+      $('#rose').attr("src", "picture.png");
     });
   });
   </script>
