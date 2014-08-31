@@ -8,14 +8,14 @@
   <div id = "headerpic">
     <img src = "SquarePic.png" id = "rose">
     <h1 id = "homelabel"> Liv Erickson </h1>
-    <a id = "design"> Designer </a>
-    <a id = "dev"> Developer </a>
   </div>
   <!--The home page div. This is the default -->
-  <div id = "right">
+  <div id = "right"><br><br>
     <p>
       "The only way to engineer the future tomorrow is to have lived in it yesterday" - Bill Buxton
     </p>
+    <a id = "design"> Designer </a>
+    <a id = "dev"> Developer </a>
     <br><br><br>
     <div id = "links">
       <a href="http://bit.ly/shesgotablog" target = "blank" class = "link"> Blog </a>
@@ -71,7 +71,7 @@
       Hello World and it was love at first sight. In reality, my first Hello World program didn't compile - but I was hooked anyway.
     </p>
 
-    <blockquote> 2006-2008: Studied CS at Loudoun County High School </blockquote>
+    <blockquote> 2006-2008: Intro to Computer Math / Computer Science at Loudoun County High School </blockquote>
 
     <p class = "designtext">
       For the first four years of my computer science education, I worked primarily in Java, LabVIEW, and Matlab. When I began college, I learned
@@ -93,7 +93,7 @@
             <li> Investigated feasibility of implementing modern-style WMS Dashboard </li>
             <li> Debugged and proposed hotfix for virtual IP management for Hyper-V sessions </li>
             <li> Owned and deployed a MultiPoint Server customer TAP site in Seattle, WA </li>
-            <li> Managed MultiPoint Server social media channels and developed content </li>
+            <li> Managed MultiPoint Server social media channels and developed content </li> <br>
 
           May 2013: Graduated from Virginia Tech with a Bachelors of Science in Computer Science
 
@@ -127,6 +127,7 @@
       $('#right').hide();
       $('#dev_container').hide();
       $('#design_container').show();
+      $('#rose').attr("src", "designimg.png")
     });
 
     $("#dev").click(function()
@@ -136,7 +137,7 @@
       $('#dev_container').show();
       $('#rose').attr("src", "devimg.png");
     });
-    $("#rose").click(function()
+    $("#homelabel").click(function()
     {
       $('#design_container').hide();
       $('#dev_container').hide();
