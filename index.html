@@ -10,7 +10,7 @@
     <div>
       <div id = "headerpic">
         <a id = "design" class = "toplink"> Designer </a>
-        <img src = "SquarePic.png" id = "rose">
+        <img src = "Assets/SquarePic.png" id = "rose">
         <a id = "dev" class = "toplink"> Developer </a>
       </div>
     </div>
@@ -33,9 +33,9 @@
           neatly into a beautiful representation of your brand and hints at the experiences your users will quickly learn to love and trust.
           Bright colors, clean lines, and subtle shadows evoke a sense of fun and simplicity. </p>
         <br>
-        <img class = "iconclip" src = "./Love Bug.png">
-        <img class = "iconclip" src = "./CandyIcon.png">
-        <img class = "iconclip" src = "./Lipstick.png">
+        <img class = "iconclip" src = "Assets/Love Bug.png">
+        <img class = "iconclip" src = "Assets/CandyIcon.png">
+        <img class = "iconclip" src = "Assets/Lipstick.png">
         <br>
      <p class = "designtext"> Designing for the vast varieties of today's devices can be a challenge. Successful products recognize the experiences
         and ecosystems their customers use and create fluid experiences tailored to their user's needs. I begin with scalable vector formats for my
@@ -127,7 +127,7 @@
       $('#right').hide();
       $('#dev_container').hide();
       $('#design_container').show();
-      $('#rose').attr("src", "./designimg.png")
+      $('#rose').attr("src", "Assets/designimg.png")
       $('#headerpic').css("background-color", "#4F0265");
     });
 
@@ -136,7 +136,7 @@
       $('#right').hide();
       $('#design_container').hide();
       $('#dev_container').show();
-      $('#rose').attr("src", "./devimg.png");
+      $('#rose').attr("src", "Assets/devimg.png");
       $('#headerpic').css("background-color", "#150763");
     });
     $("#rose").click(function()
@@ -144,7 +144,7 @@
       $('#design_container').hide();
       $('#dev_container').hide();
       $('#right').show();
-      $('#rose').attr("src", "./SquarePic.png");
+      $('#rose').attr("src", "Assets/SquarePic.png");
       $('#headerpic').css("background-color", "#A482D3");
     });
   });
