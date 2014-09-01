@@ -39,6 +39,7 @@ body
   width:100%;
   margin-top:35px;
   float:bottom;
+  color:#000000;
 }
 
 #design_container
@@ -89,7 +90,6 @@ a
   margin-right:20px;
   font-size:20px;
   text-decoration: none;
-  color:#FFFEEE;
 }
 a:hover
 {
@@ -110,6 +110,10 @@ h1
   font-weight: 200;
   padding-top:5%;
   font-family:"Lato";
+}
+.toplink
+{
+  color:#FFFFFF
 }
 #homelabel:hover
 {
