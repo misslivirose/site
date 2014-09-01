@@ -8,7 +8,6 @@
   <div>
   <div id = "headerpic">
     <img src = "SquarePic.png" id = "rose">
-    <h1 id = "homelabel"> Liv Erickson </h1>
   </div>
   <!--The home page div. This is the default -->
   <div id = "right"><br><br>
@@ -128,6 +127,7 @@
       $('#dev_container').hide();
       $('#design_container').show();
       $('#rose').attr("src", "designimg.png")
+      $('#headerpic').css("background-color", "#531AA2");
     });
 
     $("#dev").click(function()
@@ -136,13 +136,15 @@
       $('#design_container').hide();
       $('#dev_container').show();
       $('#rose').attr("src", "devimg.png");
+      $('#headerpic').css("background-color", "#1D053F");
     });
-    $("#homelabel").click(function()
+    $("#rose").click(function()
     {
       $('#design_container').hide();
       $('#dev_container').hide();
       $('#right').show();
       $('#rose').attr("src", "SquarePic.png");
+      $('#headerpic').css("background-color", "#A482D3");
     });
   });
   </script>
