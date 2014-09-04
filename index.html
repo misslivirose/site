@@ -10,7 +10,9 @@
     <div>
       <div id = "headerpic">
         <a id = "design" class = "toplink"> Designer </a>
-        <img src = "Assets/SquarePic.png" id = "rose">
+        <img src = "Assets/SquarePic.png" id = "rose" class = "titlepic">
+        <img src = "Assets/designimg.png" id = "designheader" class = "hiddenpic titlepic">
+        <img src = "Assets/devimg.png" id = "devheader" class = "hiddenpic titlepic">
         <a id = "dev" class = "toplink"> Developer </a>
       </div>
     </div>
@@ -127,7 +129,11 @@
       $('#right').hide();
       $('#dev_container').hide();
       $('#design_container').show();
-      $('#rose').attr("src", "Assets/designimg.png")
+
+      $('#rose').hide();
+      $('#devheader').hide();
+      $('#designheader').show();
+
       $('#headerpic').css("background-color", "#4F0265");
     });
 
@@ -136,15 +142,25 @@
       $('#right').hide();
       $('#design_container').hide();
       $('#dev_container').show();
-      $('#rose').attr("src", "Assets/devimg.png");
+
+      $('#rose').hide();
+      $('#devheader').show();
+      $('#designheader').hide();
+
       $('#headerpic').css("background-color", "#150763");
     });
+    
     $("#rose").click(function()
     {
       $('#design_container').hide();
       $('#dev_container').hide();
       $('#right').show();
-      $('#rose').attr("src", "Assets/SquarePic.png");
+
+      $('#rose').show();
+      $('#devheader').hide();
+      $('#designheader').hide();
+
+
       $('#headerpic').css("background-color", "#A482D3");
     });
   });

@@ -1,8 +1,12 @@
 /* Images */
-#rose
+.titlepic
 {
   width:21%;
   vertical-align:middle;
+}
+.hiddenpic
+{
+  display:none;
 }
 .iconclip
 {
