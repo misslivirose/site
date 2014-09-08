@@ -142,7 +142,7 @@ p
 .designtext
 {
   text-align:justify;
-  font-weight:200;
+  font-weight:100;
   font-size:1.5rem;
   line-height:1.75rem;
 }
@@ -157,5 +157,9 @@ p
   .toplink
   {
     font-size:6vw;
+  }
+  .designtext
+  {
+    font-size:1rem;
   }
 }
