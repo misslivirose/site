@@ -166,4 +166,13 @@ p
   {
     margin:2px;
   }
+  blockquote
+  {
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+  }
+  li
+  {
+     text-align:left;  
+  }
 }
