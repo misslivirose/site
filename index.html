@@ -1,169 +1,115 @@
-<!DOCTYPE HTML5>
+<!DOCTYPE html5>
 <html>
-  <head>
-      <link rel="stylesheet" type="text/css" href="styles.css" />
-      <meta name="viewport" content="width=device-width,initial-scale=1.0">
-      <link href='//fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
-      <link href='//fonts.googleapis.com/css?family=Josefin+Slab:300' rel='stylesheet' type='text/css'>
-      <link rel="icon"
-      type="image/png"
-      href="Assets/favicon.png">
-  </head>
-  <body>
+<head>
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+</head>
+<body>
+<div id = "wrap">
+  <!-- Begin navigation bar -->
+  <div class="navbar-wrapper">
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar-header">
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="navbar-collapse collapse" style = "">
+            <ul class="nav navbar-nav">
+              <div class = "col-sm-3 col-xs-12"><li><text style = "color:#79CED6"> ABOUT</text></li></div>
+              <div class = "col-sm-3 col-xs-12"><li><a href="design.html">CREATE</a></li></div>
+              <div class = "col-sm-3 col-xs-12"><li><a href="code.html">CODE</a></li></div>
+              <div class = "col-sm-3 col-xs-12"><li><a href="http://livierickson.com">BLOG</a></li></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Begin home page content -->
     <div>
-      <div id = "headerpic">
-        <a id = "design" class = "toplink"> Designer </a>
-        <img src = "Assets/SquarePic.png" id = "rose" class = "titlepic">
-        <img src = "Assets/designimg.png" id = "designheader" class = "hiddenpic titlepic">
-        <img src = "Assets/devimg.png" id = "devheader" class = "hiddenpic titlepic">
-        <a id = "dev" class = "toplink"> Developer </a>
+      <!-- Overview container -->
+      <div id = "content" class = "container right" style = "box-shadow: 0px -3px 3px -3px #EFD6Df, 0px 3px 3px -3px #EFD6Df;">
+        <div class = "col-xs-12">
+          <div class = container>
+            <div class = "col-xs-12 col-sm-8">
+              <br>
+              <h1 id = "one" class = "font-grey"> I'm Liv. </h1>
+              <h1 id = "two" class = "font-grey"> I write code & design things. </h1>
+              <a href = "mailto:liv@virtualinfinity.io"><span id = "mail" class = "fa fa-envelope-o fa-3x tag"></a>
+              <a href = "http://bit.ly/can_haz_github"><span id = "github" class = "fa fa-github-alt fa-3x tag"></a>
+              <a href = "http://twitter/com/misslivirose"><span id = "twitter" class = "fa fa-twitter fa-3x tag"></a>
+              <a href = "http://bit.ly/livi_on_linked_in"><span id = "linkedin" class = "fa fa-linkedin fa-3x tag"></a>
+            </div>
+            <div class = "col-xs-12 col-sm-4">
+              <img id = "profile_pic" src = "./assets/profile_new.png">
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
-  <!--The home page div. This is the default -->
-    <div id = "right"><br><br>
-      <p>
-        "The only way to engineer the future tomorrow is to have lived in it yesterday" - Bill Buxton
-      </p>
-      <h1> Liv Erickson </h1>
-    </div>
-  <!-- The design div. -->
-    <div id = "design_container"><br><br>
-      <p class = "designtext"> Software should be functional, beautiful, and usable. In today's technology-centric world, it is
-        increasingly important that applications and services are designed to supplement the user's
-        real-world experiences and supply them with a worry-free way to use the products they love. </p>
-      <div id = "icons">
-        <h2 class = "sectionheaders"> Icons </h2>
-        <p class = "designtext"> Your application's icon is the front door to your product - it is the essence of your service packaged
-          neatly into a beautiful representation of your brand and hints at the experiences your users will quickly learn to love and trust.
-          Bright colors, clean lines, and subtle shadows evoke a sense of fun and simplicity. </p>
-        <br>
-        <img class = "iconclip" src = "Assets/Love Bug.png">
-        <img class = "iconclip" src = "Assets/CandyIcon.png">
-        <img class = "iconclip" src = "Assets/Lipstick.png">
-        <img class = "iconclip" src = "Assets/CosmicCalling.png">
-        <br>
-     <p class = "designtext"> Designing for the vast varieties of today's devices can be a challenge. Successful products recognize the experiences
-        and ecosystems their customers use and create fluid experiences tailored to their user's needs. I begin with scalable vector formats for my
-        icons and graphics using <a class = 'inline' href="https://affinity.serif.com/"> Affinity Designer </a> or
-        <a class = 'inline' href = "http://inkscape.org/"> Inkscape</a>, and finalize images and assets using open source image manipulation programs.</p>
-      </div>
-      <div>
-      <blockquote>
-        Portfolio coming soon!
-      </blockquote>
-
-      </div>
-    </div>
-    <!--  The code div -->
-    <div id = "dev_container"><br><br>
-       <p class = "designtext"> I am an up-and-coming design enthusiast-turned web developer determined to build
-         beautiful, functional things. Technology aided by caffeine is what drives me - our connectivity and capabilities
-         in today's world allow us to redefine what is possible.
-       </p>
-
-      <blockquote> "I don't build in order to have clients. I have clients in order to build." - Howard Roark </blockquote></b>
-
-      <p class = "designtext">
-        I hold a degree in Computer Science from Virginia Tech and currently work as a Program Manager at Microsoft. I have several years
-        of development experience in desktop (Windows, Mac) and mobile (iOS, Android, and Windows Phone) applications,
-        with a focus on user-facing components, rapid prototyping, and fit and finish. I speak C#, Objective-C, Java, XML, XAML, HTML, CSS, and JavaScript.</p>
-
-      <blockquote>
-        "People don't buy what you do, they buy why you do it." - Simon Sinek
-      </blockquote>
-
-    <p class = "designtext">
-        I'm based in the SF Bay Area and am always looking to partner with cool people working on things that help people. If you're interested
-        in connecting, <a href="mailto:livi.erickson@outlook.com">let's chat! </a>
-        </p>
-    </div>
+    <div id = "push"></div>
   </div>
-</body>
-<footer>
-  <div id = "links">
-    <a href="http://bit.ly/shesgotablog" target = "blank" class = "link"> Blog </a>
-    <a href="mailto:livi.erickson@outlook.com" class = "link"> Contact </a>
-    <a href="http://bit.ly/140characters_or_fewer" target = "blank" class = "link"> @misslivirose </a>
-    <a href="http://bit.ly/livi_on_linked_in" target="blank" class = "link"> LinkedIn </a>
-    <a href="http://bit.ly/can_haz_github" target="blank" class = "last"> GitHub </a>
-  </div>
-</footer>
-  <!-- JQuery for handling switches -->
+      <!-- Begin footer -->
+      <div class = "container">
+        <div id="footer">
+          <div class="container" style = "text-align:center">
+            <text>COPYRIGHT &copy; 2014 <a href = "index.html" style = "color:#79CED6">LIV ERICKSON </a></text>
+          </div>
+        </div>
+      </div>
+  <!-- Scripts -->
   <script src = "jquery.js"></script>
-  <script>
+  <script src = "jquery-ui.js"></script>
+  <script src = "jquery.color.js"></script>
+
+  <script src = "./bootstrap/js/bootstrap.js"></script>
+
+  <script type = "text/javascript">
   $(document).ready(function()
   {
-    $('#design_container').hide();
-    $('#dev_container').hide();
 
-    $("#design").click(function()
+    $("#content").hide();
+
+    $("#one").hide();
+    $("#two").hide();
+    $("#mail").hide();
+    $("#github").hide();
+    $("#twitter").hide();
+    $("#linkedin").hide();
+
+    $("#content").toggle('fade', 4000);
+
+    $("#one").delay(1000).toggle('fade', 2000);
+    $("#two").delay(2000).toggle('fade', 2000);
+
+    if($(window).width() <= 768)
     {
-      $('#right').hide();
-      $('#dev_container').hide();
-      $('#design_container').show();
-
-      $('#rose').hide();
-      $('#devheader').hide();
-      $('#designheader').show();
-
-      $('#headerpic').css("background-color", "#4F0265");
-    });
-
-    $("#dev").click(function()
+      $("#profile_pic").hide();
+      $("#linkedin").delay(3500).toggle('fade', 1000);
+      $("#twitter").delay(3500).toggle('fade', 1000);
+      $("#github").delay(3500).toggle('fade', 1000);
+      $("#mail").delay(3500).toggle('fade', 1000);
+    }
+    else
     {
-      $('#right').hide();
-      $('#design_container').hide();
-      $('#dev_container').show();
-
-      $('#rose').hide();
-      $('#devheader').show();
-      $('#designheader').hide();
-
-      $('#headerpic').css("background-color", "#150763");
-    });
-
-    $("#rose").click(function()
-    {
-      $('#design_container').hide();
-      $('#dev_container').hide();
-      $('#right').show();
-
-      $('#rose').show();
-      $('#devheader').hide();
-      $('#designheader').hide();
-
-      $('#headerpic').css("background-color", "#A482D3");
-    });
-
-    $("#devheader").click(function()
-    {
-      $('#design_container').hide();
-      $('#dev_container').hide();
-      $('#right').show();
-
-      $('#rose').show();
-      $('#devheader').hide();
-      $('#designheader').hide();
-
-      $('#headerpic').css("background-color", "#A482D3");
-    });
-
-    $("#designheader").click(function()
-    {
-      $('#design_container').hide();
-      $('#dev_container').hide();
-      $('#right').show();
-
-      $('#rose').show();
-      $('#devheader').hide();
-      $('#designheader').hide();
-
-      $('#headerpic').css("background-color", "#A482D3");
-    });
-
+      $("#linkedin").delay(3500).toggle('fade', 1000);
+      $("#twitter").delay(4000).toggle('fade', 1000);
+      $("#github").delay(4500).toggle('fade', 1000);
+      $("#mail").delay(5000).toggle('fade', 1000);
+    }
   });
+
   </script>
-  <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -172,4 +118,5 @@
     ga('create', 'UA-54110591-1', 'auto');
     ga('send', 'pageview');
   </script>
+</body>
 </html>

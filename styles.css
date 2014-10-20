@@ -1,174 +1,176 @@
-/* Images */
-.titlepic
+/** Colors **/
+.background-grey { background-color: #141111 }
+.font-grey {color: #E7E4E5}
+.dark-grey {color: #141111}
+
+.overrideBody
 {
-  width:21%;
-  vertical-align:middle;
+  font-family:"Open Sans";
+  font-weight:300;
+  font-size:15px;
 }
-.hiddenpic
+.buttonBody
 {
-  display:none;
+  font-family:"Open Sans";
+  font-weight:300;
+  font-size:36px;
 }
-.iconclip
+
+/** Body, divs **/
+/** Consider buying Pacioli **/
+html
 {
-  width: 20%;
-  margin: 10px;
+  background-color:#141111;
 }
-/* Div */
+head
+{
+  background-color:#141111;
+}
 body
 {
-  background-color:#fffeff;
+  color:#FFF;
+  background-color:#141111;
+}
+body.background
+{
+  background-image:url("/assets/background.JPG");
+  background-size:100% 100%;
+}
+div.center
+{
   text-align:center;
-  font-family:"Josefin Slab";
-  margin:0px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
-#headerpic
+div.left
 {
-  width:100%;
-  left:0%;
-  background-color:#A482D3;
-  box-shadow: 0px 0px 1px #EEEEEE;
-  top:0%;
+  text-align:left;
+}
+div.right
+{
+  text-align:right;
+}
 
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
 }
-#right
+#push
 {
-  width:75%;
-  margin-left:auto;
-  margin-right:auto;
+  height: 60px;
+}
+#head
+{
+  position:relative;
+  width:100%;
+  top:0px;
+}
+.pic
+{
+  width:20%;
+}
+#display
+{
   text-align:center;
 }
-#links
+#tile_pic
 {
-  width:100%;
-  margin-top:35px;
-  float:bottom;
-  color:#000000;
+  width:25%;
+  float:right;
+  padding-top:10px;
 }
-
-#design_container
+.tag
 {
-  width:75%;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#dev_container
-{
-  width:75%;
-  margin-left:auto;
-  margin-right:auto;
-}
-footer
-{
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-left:10px;
+  padding-right:10px;
 
 }
-/* Links */
-#dev
+.tag:hover
 {
-  margin-left:10%;
-  margin-top:10%;
-  font-weight:100;
-  font-family:"Josefin Sans";
+  color:#79CED6;
 }
-#design
+/** Text **/
+text
 {
-  margin-right:10%;
-  margin-top:10%;
-  font-weight:100;
-  font-family:"Josefin Sans";
+  font-family:"Open Sans";
+  font-size:15px;
 }
-a
-{
-  font-weight: 200;
-  margin-left:1%;
-  margin-right:1%;
-  text-decoration: none;
-}
-a:hover
-{
-  color:#FFFFFF;
-  text-shadow: #000675 0px 0px 13px;
-  cursor:pointer;
-}
-a.inline
-{
-  margin-left:0px;
-  margin-right:0px;
-}
-/* Text */
 h1
 {
-  color:#2E0765;
-  font-weight: 200;
-  font-family:"Josefin Sans";
-}
-.toplink
-{
-  color:#FFFFFF;
-  font-size:5vw;
-}
-#homelabel:hover
-{
-  cursor:pointer;
+  font-family:"Open Sans";
+  font-weight:300;
 }
 h2
 {
-  font-size:1.5rem;
   font-weight:300;
-  font-family:"Josefin Slab";
-}
-h2.sectionheaders
-{
-  text-decoration:underline;
-  text-align:left;
-  font-family:"Josefin Sans";
-  padding-top: 10px;
+  font-family:"Open Sans";
 }
 h3
 {
-  font-size:20px;
-  font-weight:100;
+  font-weight:300;
+  font-family:"Open Sans";
 }
 
-p
+li.active
 {
-  font-weight:100;
-  font-size:1.5rem;
+  color:#Ef3242;
 }
-.designtext
+
+/** Links **/
+a
 {
-  text-align:justify;
-  font-weight:100;
-  font-size:1.5rem;
-  line-height:1.75rem;
+  font-family:"Open Sans";
+  font-size:15px;
+  text-decoration:none;
+  color:#18848E;
 }
-.title
+a:link
 {
-  text-decoration:underline;
+  color:#18848E;
 }
-/* Media Queries */
-/** Phone **/
-@media screen and (max-width: 648px)
+a:visited
 {
-  .toplink
+  color:#18848E;
+}
+a:hover
+{
+  cursor:pointer;
+  color:#79CED6;
+}
+a:active
+{
+  color:#18848E;
+}
+text:hover
+{
+  cursor:default;
+}
+
+/** Pictures **/
+.codelogo
+{
+width:100%;
+}
+.icon
+{
+  width:100%;
+}
+#profile_pic
+{
+  width:100%;
+}
+@media (max-width: 767px)
+{
+  body
   {
-    font-size:6vw;
+    padding-top:0px;
   }
-  .designtext
+  #content
   {
-    font-size:1rem;
-  }
-  .iconclip
-  {
-    margin:2px;
-  }
-  blockquote
-  {
-    -webkit-margin-start:0;
-    -webkit-margin-end:0;
-  }
-  li
-  {
-     text-align:left;
+    text-align:center;
   }
 }
