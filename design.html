@@ -1,0 +1,105 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+<body>
+  <div id = "wrap">
+    <!-- Begin navigation bar -->
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="navbar-header">
+            <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <div class = "col-sm-3 col-xs-12"><li><a href="./index.html">ABOUT</a></li></div>
+              <div class = "col-sm-3 col-xs-12"><li><text style = "color: #79CED6">CREATE</text></li></div>
+              <div class = "col-sm-3 col-xs-12"><li><a href="./code.html">CODE</a></li></div>
+              <div class = "col-sm-3 col-xs-12"><li><a href="http://livierickson.com">BLOG</a></li></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Start icons -->
+  <div class = "container" id = "iconholder" style = "box-shadow: 0px -3px 3px -3px #EFD6Df, 0px 3px 3px -3px #EFD6Df;">
+    <div class = "col-sm-2 col-xs-4 center"><img id = "candy" src = "./assets/CandyIcon.png" class = "icon"></div>
+    <div class = "col-sm-2 col-xs-4 center"><img id = "space" src = "./assets/CosmicCalling.png" class = "icon"></div>
+    <div class = "col-sm-2 col-xs-4 center"><img id = "makeup" src = "./assets/Lipstick.png"  class = "icon"></div>
+    <div class = "col-sm-2 col-xs-4 center"><img id = "vs" src = "./assets/VSforiOS.png"  class = "icon"></div>
+    <div class = "col-sm-2 col-xs-4 center"><img id = "bug" src = "./assets/Love Bug.png" class = "icon"></div>
+    <div class = "col-sm-2 col-xs-4 center"><img id = "penfed" src = "./assets/PenfedIcon.png" class = "icon"></div>
+  </div>
+  <div class = "container center">
+    <br>
+    <div class = "col-xs-12"><h1 id = "textheader">Detailed portfolio coming soon</h1></div>
+    <div id = "behance" class = "col-xs-12"><a href = "https://www.behance.net/virtualinfinity"><span class = "fa fa-behance fa-3x tag"></a></div>
+    <div class = "col-xs-12"><h1 id = "textheader2"> Iconography, Visual Design, Usability, & More </h2></div>
+  </div>
+  <div id = "push"></div>
+</div>
+<!-- Start footer -->
+<div class="footer">
+  <div class="container" style = "text-align:center">
+    <text>COPYRIGHT &copy; 2014 <a href = "index.html" style = "color:#79CED6">LIV ERICKSON </a></text>
+  </div>
+</div>
+  <script src = "jquery.js"></script>
+  <script src = "jquery-ui.js"></script>
+  <script src = "jquery.color.js"></script>
+  <script src = "./bootstrap/js/bootstrap.js"></script>
+
+  <script type = "text/javascript">
+
+    $(document).ready(function()
+    {
+      $("#textheader").hide();
+      $('#textheader2').hide();
+      $("#iconholder").hide();
+      $("#iconholder").toggle("fade", 3000);
+
+      $('img').hide();
+      $("#behance").hide();
+
+      $( "#candy" ).delay(0).toggle("fade", 1000);
+
+      $( "#space" ).delay(250).toggle("fade", 1000);
+
+      $( "#makeup" ).delay(500).toggle("fade", 1000);
+
+      $( "#vs" ).delay(750).toggle("fade", 1000);
+
+      $( "#bug" ).delay(1000).toggle("fade", 1000);
+
+      $( "#penfed").delay(1250).toggle("fade", 1000);
+
+      $( "#textheader").delay(1500).toggle("fade", 1000);
+
+      $( "#behance").delay(2000).toggle("fade", 2000);
+
+      $( "#textheader2").delay(3000).toggle("fade", 1000);
+
+    });
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-54110591-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

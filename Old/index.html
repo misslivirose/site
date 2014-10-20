@@ -1,0 +1,175 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link href='//fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
+      <link href='//fonts.googleapis.com/css?family=Josefin+Slab:300' rel='stylesheet' type='text/css'>
+      <link rel="icon"
+      type="image/png"
+      href="Assets/favicon.png">
+  </head>
+  <body>
+    <div>
+      <div id = "headerpic">
+        <a id = "design" class = "toplink"> Designer </a>
+        <img src = "Assets/SquarePic.png" id = "rose" class = "titlepic">
+        <img src = "Assets/designimg.png" id = "designheader" class = "hiddenpic titlepic">
+        <img src = "Assets/devimg.png" id = "devheader" class = "hiddenpic titlepic">
+        <a id = "dev" class = "toplink"> Developer </a>
+      </div>
+    </div>
+  <!--The home page div. This is the default -->
+    <div id = "right"><br><br>
+      <p>
+        "The only way to engineer the future tomorrow is to have lived in it yesterday" - Bill Buxton
+      </p>
+      <h1> Liv Erickson </h1>
+    </div>
+  <!-- The design div. -->
+    <div id = "design_container"><br><br>
+      <p class = "designtext"> Software should be functional, beautiful, and usable. In today's technology-centric world, it is
+        increasingly important that applications and services are designed to supplement the user's
+        real-world experiences and supply them with a worry-free way to use the products they love. </p>
+      <div id = "icons">
+        <h2 class = "sectionheaders"> Icons </h2>
+        <p class = "designtext"> Your application's icon is the front door to your product - it is the essence of your service packaged
+          neatly into a beautiful representation of your brand and hints at the experiences your users will quickly learn to love and trust.
+          Bright colors, clean lines, and subtle shadows evoke a sense of fun and simplicity. </p>
+        <br>
+        <img class = "iconclip" src = "Assets/Love Bug.png">
+        <img class = "iconclip" src = "Assets/CandyIcon.png">
+        <img class = "iconclip" src = "Assets/Lipstick.png">
+        <img class = "iconclip" src = "Assets/CosmicCalling.png">
+        <br>
+     <p class = "designtext"> Designing for the vast varieties of today's devices can be a challenge. Successful products recognize the experiences
+        and ecosystems their customers use and create fluid experiences tailored to their user's needs. I begin with scalable vector formats for my
+        icons and graphics using <a class = 'inline' href="https://affinity.serif.com/"> Affinity Designer </a> or
+        <a class = 'inline' href = "http://inkscape.org/"> Inkscape</a>, and finalize images and assets using open source image manipulation programs.</p>
+      </div>
+      <div>
+      <blockquote>
+        Portfolio coming soon!
+      </blockquote>
+
+      </div>
+    </div>
+    <!--  The code div -->
+    <div id = "dev_container"><br><br>
+       <p class = "designtext"> I am an up-and-coming design enthusiast-turned web developer determined to build
+         beautiful, functional things. Technology aided by caffeine is what drives me - our connectivity and capabilities
+         in today's world allow us to redefine what is possible.
+       </p>
+
+      <blockquote> "I don't build in order to have clients. I have clients in order to build." - Howard Roark </blockquote></b>
+
+      <p class = "designtext">
+        I hold a degree in Computer Science from Virginia Tech and currently work as a Program Manager at Microsoft. I have several years
+        of development experience in desktop (Windows, Mac) and mobile (iOS, Android, and Windows Phone) applications,
+        with a focus on user-facing components, rapid prototyping, and fit and finish. I speak C#, Objective-C, Java, XML, XAML, HTML, CSS, and JavaScript.</p>
+
+      <blockquote>
+        "People don't buy what you do, they buy why you do it." - Simon Sinek
+      </blockquote>
+
+    <p class = "designtext">
+        I'm based in the SF Bay Area and am always looking to partner with cool people working on things that help people. If you're interested
+        in connecting, <a href="mailto:livi.erickson@outlook.com">let's chat! </a>
+        </p>
+    </div>
+  </div>
+</body>
+<footer>
+  <div id = "links">
+    <a href="http://bit.ly/shesgotablog" target = "blank" class = "link"> Blog </a>
+    <a href="mailto:livi.erickson@outlook.com" class = "link"> Contact </a>
+    <a href="http://bit.ly/140characters_or_fewer" target = "blank" class = "link"> @misslivirose </a>
+    <a href="http://bit.ly/livi_on_linked_in" target="blank" class = "link"> LinkedIn </a>
+    <a href="http://bit.ly/can_haz_github" target="blank" class = "last"> GitHub </a>
+  </div>
+</footer>
+  <!-- JQuery for handling switches -->
+  <script src = "jquery.js"></script>
+  <script>
+  $(document).ready(function()
+  {
+    $('#design_container').hide();
+    $('#dev_container').hide();
+
+    $("#design").click(function()
+    {
+      $('#right').hide();
+      $('#dev_container').hide();
+      $('#design_container').show();
+
+      $('#rose').hide();
+      $('#devheader').hide();
+      $('#designheader').show();
+
+      $('#headerpic').css("background-color", "#4F0265");
+    });
+
+    $("#dev").click(function()
+    {
+      $('#right').hide();
+      $('#design_container').hide();
+      $('#dev_container').show();
+
+      $('#rose').hide();
+      $('#devheader').show();
+      $('#designheader').hide();
+
+      $('#headerpic').css("background-color", "#150763");
+    });
+
+    $("#rose").click(function()
+    {
+      $('#design_container').hide();
+      $('#dev_container').hide();
+      $('#right').show();
+
+      $('#rose').show();
+      $('#devheader').hide();
+      $('#designheader').hide();
+
+      $('#headerpic').css("background-color", "#A482D3");
+    });
+
+    $("#devheader").click(function()
+    {
+      $('#design_container').hide();
+      $('#dev_container').hide();
+      $('#right').show();
+
+      $('#rose').show();
+      $('#devheader').hide();
+      $('#designheader').hide();
+
+      $('#headerpic').css("background-color", "#A482D3");
+    });
+
+    $("#designheader").click(function()
+    {
+      $('#design_container').hide();
+      $('#dev_container').hide();
+      $('#right').show();
+
+      $('#rose').show();
+      $('#devheader').hide();
+      $('#designheader').hide();
+
+      $('#headerpic').css("background-color", "#A482D3");
+    });
+
+  });
+  </script>
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-54110591-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>
